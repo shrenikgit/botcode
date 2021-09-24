@@ -15,6 +15,9 @@ ebot = EchoBot()
 
 @app.route("/api/messages",methods=["POST"])
 def messages():
+    print("First number = ")
+    print("Second number = ")
+    
     if "application/json" in request.headers["content-type"]:
       jsonmessage = request.json
     else:
